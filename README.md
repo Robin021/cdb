@@ -15,3 +15,5 @@ This is a program use python to connect ot MySQL database
 	print "Database version : %s"%data
 	db.close()
 `
+## jenkins.sh
+* used for pull  the code to lib
