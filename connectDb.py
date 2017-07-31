@@ -36,6 +36,7 @@ cur.executemany(sqli,[
 
 #获取数据
 data = cur.fetchall()
+
 #打印数据
 print"select * from student:\n %s" % data
 
