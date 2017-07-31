@@ -25,7 +25,9 @@ cur.execute("select * from student")
 #删除查询条件的数据
 #cur.execute("delete from student where age='9'")
 
+#获取数据
 data = cur.fetchall()
+#打印数据
 print"select * from student:\n %s" % data
 
 
