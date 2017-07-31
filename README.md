@@ -16,4 +16,4 @@ This is a program use python to connect ot MySQL database
 	db.close()
 `
 ## jenkins.sh
-* used for pull  the code to path
+* used for pull  the code to path.
