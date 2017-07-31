@@ -39,7 +39,7 @@ data = cur.fetchall()
 #打印数据
 print"select * from student:\n %s" % data
 
-#
+#关闭连接
 cur.close()
 conn.commit()
 conn.close()
