@@ -26,19 +26,20 @@ cur.execute("select * from student")
 #cur.execute("delete from student where age='9'")
 
 #一次插入多条记录
-sqli="insert into student values(%s,%s,%s,%s)"
-cur.executemany(sqli,[
-    ('3','Tom','1 year 1 class','6'),
-    ('3','Jack','2 year 1 class','7'),
-    ('3','Yaheng','2 year 2 class','7'),
-    ])
+# sqli="insert into student values(%s,%s,%s,%s)"
+# cur.executemany(sqli,[
+#     ('3','Tom','1 year 1 class','6'),
+#     ('3','Jack','2 year 1 class','7'),
+#     ('3','Yaheng','2 year 2 class','7'),
+#     ])
 
 
 #获取数据
 data = cur.fetchall()
 
 #打印数据
-print"select * from student:\n %s" % data
+for r in data:
+    print r
 
 #关闭连接
 cur.close()
